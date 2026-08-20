@@ -1,0 +1,327 @@
+:root {
+  --bg-color: #fdfcfa;
+  --surface-color: #f5f2ec;
+  --text-color: #211f1c;
+  --text-muted: #7a756c;
+  --accent-color: #c1602f;
+  --accent-soft: #f6e3d6;
+  --nav-bg: rgba(253, 252, 250, 0.85);
+  --border-color: #e6e1d8;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #14130f;
+    --surface-color: #1e1c17;
+    --text-color: #f2ede4;
+    --text-muted: #a39d90;
+    --accent-color: #e08a52;
+    --accent-soft: #3a2a1f;
+    --nav-bg: rgba(20, 19, 15, 0.85);
+    --border-color: #2c2922;
+  }
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: Georgia, "Apple SD Gothic Neo", serif;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: var(--nav-bg);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.navbar-brand {
+  color: var(--text-color) !important;
+  font-family: Georgia, serif;
+}
+
+.navbar-nav .nav-link {
+  color: var(--text-muted) !important;
+  font-size: 14px;
+  padding: 8px 14px !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--accent-color) !important;
+}
+
+/* 프로필 소개 */
+.intro {
+  padding: 90px 20px 70px;
+}
+
+/*항목 번호 디자인 */
+.small-label {
+  color: var(--accent-color);
+  font-weight: 700;
+  font-size: 13px;
+  margin-bottom: 14px;
+  font-family: "Apple SD Gothic Neo", sans-serif;
+}
+
+.main-title {
+  font-size: 41.6px;
+  font-weight: 700;
+  line-height: 1.35;
+  margin-bottom: 20px;
+}
+
+.main-title .accent {
+  color: var(--accent-color);
+}
+
+.sub-text {
+  color: var(--text-muted);
+  font-size: 16.8px;
+  font-family: "Apple SD Gothic Neo", sans-serif;
+}
+
+.link-btn {
+  color: var(--accent-color);
+  font-weight: 700;
+  font-family: "Apple SD Gothic Neo", sans-serif;
+  text-decoration: none;
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 2px;
+}
+
+.link-btn.muted {
+  color: var(--text-muted);
+  border-bottom-color: var(--border-color);
+}
+
+/* 프로필 사진 */
+.profile-photo {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: 6px solid var(--accent-soft);
+  background-image: url("./images/profile.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.title {
+  font-size: 28.8px;
+  font-weight: 700;
+}
+
+.desc {
+  color: var(--text-muted);
+  font-family: "Apple SD Gothic Neo", sans-serif;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  font-family: "Apple SD Gothic Neo", sans-serif;
+}
+
+.skill-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.skill-name {
+  font-weight: 800;
+  font-size: 17.6px;
+  width: 130px;
+  font-family: Georgia, serif;
+}
+
+.skill-tag {
+  background-color: var(--surface-color);
+  color: var(--text-muted);
+  font-size: 13px;
+  padding: 5px 14px;
+  border-radius: 999px;
+}
+
+/* 메인 스토리 기능 */
+.story-list {
+  border-left: 3px solid var(--border-color);
+  padding-left: 24px;
+  font-family: "Apple SD Gothic Neo", sans-serif;
+}
+
+.story-item {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.story-photo {
+  width: 170px;
+  height: 170px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background-color: var(--surface-color);
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* 스토리 사진 항목별로 나누기 */
+.story-photo-1 {
+  background-image: url("./images/story1.jpg");
+}
+
+.story-photo-2 {
+  background-image: url("./images/story2.jpg");
+}
+
+.story-photo-3 {
+  background-image: url("./images/story3.jpg");
+}
+
+.story-photo-4 {
+  background-image: url("./images/story4.jpg");
+}
+
+.story-photo-5 {
+  background-image: url("./images/story5.jpg");
+}
+
+.story-photo-6 {
+  background-image: url("./images/story6.jpg");
+}
+
+.story-item h5 {
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-family: "Apple SD Gothic Neo", sans-serif;
+}
+
+.story-item p {
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin-bottom: 0;
+}
+
+/* 숫자 리스트 */
+.about-list {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--border-color);
+  font-family: "Apple SD Gothic Neo", sans-serif;
+}
+
+.about-item {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  padding: 22px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.about-number {
+  color: var(--accent-color);
+  font-weight: 800;
+  font-size: 16px;
+  font-family: "Apple SD Gothic Neo", sans-serif;
+  width: 32px;
+}
+
+.about-item h5 {
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.about-item p {
+  color: var(--text-muted);
+  margin-bottom: 0;
+}
+
+
+/* 여행 사진 스크롤 기능 */
+.gallery-scroll {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 14px;
+  overflow-x: auto;
+  padding: 4px 20px 20px;
+}
+
+
+/* 여행 사진 칸 디자인 */
+.gallery-photo {
+  width: 220px;
+  height: 280px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 6px solid var(--accent-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  font-size: 13px;
+  font-family: "Apple SD Gothic Neo", sans-serif;
+}
+
+.gallery-photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+
+footer {
+  color: var(--text-muted);
+  font-size: 13px;
+  font-family: "Apple SD Gothic Neo", sans-serif;
+}
+
+
+/* 모바일 */
+@media (max-width: 576px) {
+  .intro {
+    padding: 60px 16px 40px;
+  }
+
+  .main-title {
+    font-size: 30.4px;
+  }
+
+  .title {
+    font-size: 22.4px;
+  }
+
+  .profile-photo {
+    width: 150px;
+    height: 150px;
+  }
+
+  .skill-name {
+    width: 100px;
+  }
+
+  .story-list {
+    padding-left: 16px;
+  }
+
+  .story-item {
+    flex-direction: column;
+  }
+
+  .story-photo {
+    width: 170px;
+    height: 170px;
+    margin: 0 auto;
+  }
+}
