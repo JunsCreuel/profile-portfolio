@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>박준성 | Profile Portfolio</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="#home">JS.PARK</a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-center gap-lg-1">
+              <li class="nav-item">
+                <a class="nav-link" href="#mbti">MBTI</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#learned">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#story">Journey</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">Hobby</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="intro container">
+        <div class="row align-items-center g-5">
+          <div class="col-12 col-lg-7">
+            <p class="small-label">Profile · 01</p>
+            <h1 class="main-title">
+              하고싶은게 많아서,<br />
+              직접 <span class="accent">만드는</span>사람
+            </h1>
+            <p class="sub-text">
+              박준성 · 24 · 부산 — 아이디어를 서비스로 만들고싶은 청년
+            </p>
+          </div>
+          <div class="col-12 col-lg-5 text-center">
+            <div class="profile-photo"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="mbti" class="container py-5">
+        <p class="small-label">02 · MBTI</p>
+        <h2 class="title mb-5">ESTJ-P, 저는 이런 사람이에요</h2>
+
+        <div class="about-list">
+          <div class="about-item">
+            <span class="about-number">01</span>
+            <div>
+              <h5>목표가 생기면 체계적으로 밀어붙여요</h5>
+              <p>계획을 세우고 끝까지 실행하는 걸 중요하게 생각해요</p>
+            </div>
+          </div>
+          <div class="about-item">
+            <span class="about-number">02</span>
+            <div>
+              <h5>현실적이고 실용적인 판단을 선호해요</h5>
+              <p>이상보다는 지금 당장 되는 방법을 먼저 찾는 편이에요</p>
+            </div>
+          </div>
+          <div class="about-item">
+            <span class="about-number">03</span>
+            <div>
+              <h5>상황에 따라 유연하게 대처해요</h5>
+              <p>계획은 세우되, 필요하면 얼마든지 방향을 바꿔요</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="learned" class="container py-5">
+        <p class="small-label">03 · Skills</p>
+        <h2 class="title mb-4">사용된 기능들</h2>
+
+        <div class="skills">
+          <div class="skill-line">
+            <span class="skill-name">HTML</span>
+            <span class="skill-tag">section</span>
+            <span class="skill-tag">button</span>
+            <span class="skill-tag">img</span>
+          </div>
+          <div class="skill-line">
+            <span class="skill-name">CSS</span>
+            <span class="skill-tag">flexbox</span>
+            <span class="skill-tag">media query</span>
+            <span class="skill-tag">변수</span>
+          </div>
+          <div class="skill-line">
+            <span class="skill-name">Bootstrap 5</span>
+            <span class="skill-tag">grid</span>
+            <span class="skill-tag">navbar</span>
+            <span class="skill-tag">utility</span>
+          </div>
+          <div class="skill-line">
+            <span class="skill-name">Git · GitHub</span>
+            <span class="skill-tag">branch</span>
+            <span class="skill-tag">commit</span>
+            <span class="skill-tag">PR</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="story" class="container py-5">
+        <p class="small-label">04 · Journey</p>
+        <h2 class="title mb-5">여기까지 오게 된 여정</h2>
+
+        <div class="story-list">
+          <div class="story-item">
+            <div class="story-photo story-photo-1"></div>
+            <div class="story-text">
+              <h5>하고 싶으면, 일단 저질렀어요</h5>
+              <p>
+                15살 때부터 C, C++로 게임 프로그래밍을 배웠고, 리눅스 다루면서
+                해킹도 공부하고, 자바스크립트도 그때 처음 접했어요
+              </p>
+            </div>
+          </div>
+
+          <div class="story-item">
+            <div class="story-photo story-photo-2"></div>
+            <div class="story-text">
+              <h5>사업이 하고 싶어서, 일찍 사회로</h5>
+              <p>
+                저는 자퇴생 출신👍🏻 일하다보니 내걸 하고싶다는 생각이 강해져서
+                제일 먼저 경험 했던게 삼성 창업부트캠프 참가였어요 자기부상
+                전시대 라는 아이템으로 지금처럼 부트캠프를 경험하고 창업을
+                준비했으나 학생이라 돈이 없어 물건을 만들지 못했어요
+              </p>
+            </div>
+          </div>
+
+          <div class="story-item">
+            <div class="story-photo story-photo-3"></div>
+            <div class="story-text">
+              <h5>첫 대학교 입학</h5>
+              <p>
+                이후 고3 19살이라는 나이에 대학에 들어가서 다른 친구들보다 일찍
+                대학생활을 시작했어요 저는 그곳에서 AI 프로그래밍을 공부했어요 —
+                자동차 자율주행 코딩도 해보고, 주민등록증 중요 부분을 자동으로
+                모자이크 처리하는 프로젝트, AI 소프트웨어 직접제작 프로젝트 등
+                실무에 쓰이는 기술들을 위주로 공부를 하였어요
+              </p>
+            </div>
+          </div>
+
+          <div class="story-item">
+            <div class="story-photo story-photo-4"></div>
+            <div class="story-text">
+              <h5>번아웃, 그리고 잠깐의 쉼표</h5>
+              <p>
+                대학교를 다니다 번아웃이 와 휴학을 했어요 단기 알바, 일
+                반복하면서 하루하루를 보냈어요 그 뒤로 여자친구와 전국투어를
+                다니듯 놀러 다녔습니다 ㅎㅎ
+              </p>
+            </div>
+          </div>
+
+          <div class="story-item">
+            <div class="story-photo story-photo-5"></div>
+            <div class="story-text">
+              <h5>비행을 공부하다, 다시 한국으로</h5>
+              <p>
+                24년도에 어릴 적 꿈이었던 비행기 조종이 하고
+                싶어져서, 곧장 미국으로 편입했어요 그렇게 비행 조종을 공부하다가 군
+                입대 시기가 되어 한국으로 돌아왔고, 전역 후에는 여러 사정으로
+                미국으로 다시 돌아가지 않고 한국에 남기로 했어요. 여자친구와
+                결혼도 준비하면서, 제 사업을 빨리 자리 잡게 만들어야겠다는
+                생각이 들었어요
+              </p>
+            </div>
+          </div>
+
+          <div class="story-item">
+            <div class="story-photo story-photo-6"></div>
+            <div class="story-text">
+              <h5>그래서, 지금</h5>
+              <p>
+                전역 후에 일단 놀았어요 태생이 놀기만 하면 불안해하는 성격이라..
+                뭐라도 해야겠다 생각했어요 ! 그래서 뭐하지뭐하지 하다가 창업을
+                결심했어요 창업 기획안까지 다 작성해뒀지만, 실제로 서비스를
+                완성할 개발 실력은 부족하다고 느껴서 이 과정에 참여하게 됐어요
+                특히 여자친구가 런칭하는 브랜드 사이트를 직접 만들어보다가 웹
+                개발에 더 깊이 관심을 갖게 된 계기가 됐어요
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="py-5">
+        <div class="container">
+          <p class="small-label">05 · Gallery</p>
+          <h2 class="title mb-2">나의 갤러리</h2>
+        </div>
+
+        <div class="gallery-scroll">
+          <div class="gallery-photo">
+            <img src="./images/travel1.jpg" alt="갤러리 1" />
+          </div>
+          <div class="gallery-photo">
+            <img src="./images/travel2.jpg" alt="갤러리 2" />
+          </div>
+          <div class="gallery-photo">
+            <img src="./images/travel3.jpg" alt="갤러리 3" />
+          </div>
+          <div class="gallery-photo">
+            <img src="./images/travel4.jpg" alt="갤러리 4" />
+          </div>
+          <div class="gallery-photo">
+            <img src="./images/travel5.jpg" alt="갤러리 5" />
+          </div>
+          <div class="gallery-photo">
+            <img src="./images/travel6.jpg" alt="갤러리 6" />
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="container py-5">
+        <p class="small-label">06 · Contact</p>
+        <h2 class="title mb-4">연락하기</h2>
+        <div class="d-flex flex-wrap gap-3">
+          <a href="mailto:wnstjd2101@gmail.com" class="link-btn">📧 Email</a>
+          <a
+            href="https://github.com/JunsCreuel"
+            target="_blank"
+            class="link-btn"
+            >💻 GitHub</a
+          >
+          <a
+            href="https://www.instagram.com/junseongpark_/"
+            target="_blank"
+            class="link-btn"
+            >📱 Instagram</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="text-center py-4">
+      <p class="mb-0">Copyright 2026 박준성</p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
